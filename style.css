@@ -1,77 +1,79 @@
-header {
+body {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end;
-  justify-content: center; */
-  /* border: red 5px solid; */
-  background-color: #1f2937;
-  height: 50px;
-  width: auto;
+  /* padding: 0px; */
+  margin: 2px;
 }
 nav {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  /* flex: 1; */
+  /* border: red 5px solid; */
   align-items: center;
-  border: 5px rgb(0, 204, 255) solid;
-}
-a {
-  margin: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1f2937;
   color: white;
-  text-decoration: none;
-  border: 2px rgb(0, 255, 34) solid;
+}
+nav > div {
+  /* border: blue 5px solid; */
+  margin: 5px;
+  margin-right: auto;
+}
+nav > a {
+  margin: 5px;
+  /* border: rgb(0, 255, 149) 5px solid; */
+}
+header {
+  display: flex;
+  /* margin-top: 10px; */
+  flex-direction: row;
+  /* border: rgb(46, 255, 74) 5px solid; */
+  flex: 1;
+  /* padding: 50px; */
+  background-color: #1f2937;
+  color: white;
 }
 .right {
-  border: 2px yellow solid;
-  color: white;
-  margin-right: auto;
+  /* display: flex; */
+  flex-direction: column;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  /* border: 5px red dotted; */
+  /* margin-right: 200px; */
+  padding: 30px;
+  /* width: 200px; */
+  width: 100%;
 }
-.top-bottom {
-  display: flex;
-  flex: 1;
-  border: 5px rgb(255, 0, 221) solid;
-  height: 450px;
-  background-color: #2c3e57;
+.left {
+  padding: 30px;
+  /* border: 5px rgb(17, 0, 255) dotted; */
+  width: 100%;
 }
-
-.middle-top-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px orange solid;
-  width: 450px;
-  margin-right: auto;
-  color: white;
-}
-.middle-top-left {
-  display: flex;
-  border: 5px rgb(255, 0, 43) solid;
-  width: 450px;
-}
-.awesome-text {
+main {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  border: 5px rgb(0, 255, 136) solid;
-  padding: 5px;
-  height: 370px;
-  width: 350px;
+  border: 5px purple solid;
 }
-.awesome-text h3 {
-  font-size: 48px;
-  font-weight: bold;
-  /* text-align: center; */
+.four-blocks {
+  display: flex;
+  flex-direction: column;
+  border: 5px yellowgreen solid;
 }
-.awesome-text button {
-  align-self: center;
-  justify-self: flex-end;
+footer {
+}
+img {
+  border-radius: 15px;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 button {
+  background-color: #3882f6;
   color: white;
-  background-color: rgb(116, 165, 255);
-  padding: 5px;
+  padding: 8px;
   border-radius: 8px;
-}
-
-p {
-  font-size: 18px;
 }
