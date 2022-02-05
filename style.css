@@ -1,79 +1,129 @@
 body {
   display: flex;
   flex-direction: column;
-  /* padding: 0px; */
-  margin: 2px;
+  margin: 0px;
+  /* font-family: "Roboto"; */
 }
 nav {
   display: flex;
-  /* flex: 1; */
   /* border: red 5px solid; */
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-bottom: 0px;
+  padding-left: 125px;
+  padding-right: 125px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #1f2937;
   color: white;
 }
+
 nav > div {
   /* border: blue 5px solid; */
   margin: 5px;
   margin-right: auto;
 }
 nav > a {
-  margin: 5px;
+  margin: 0 8px;
   /* border: rgb(0, 255, 149) 5px solid; */
 }
 header {
   display: flex;
-  /* margin-top: 10px; */
   flex-direction: row;
   /* border: rgb(46, 255, 74) 5px solid; */
   flex: 1;
-  /* padding: 50px; */
   background-color: #1f2937;
   color: white;
 }
-.right {
-  /* display: flex; */
-  flex-direction: column;
-  /* flex: 1; */
+.center {
+  display: flex;
   flex-wrap: wrap;
-  /* border: 5px red dotted; */
-  /* margin-right: 200px; */
-  padding: 30px;
-  /* width: 200px; */
-  width: 100%;
+  flex: 1;
+  /* border: white 5px solid; */
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 50px;
+}
+.right {
+  /* border: pink solid 5px; */
+  font-size: 20px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  padding: 18px;
+  width: 450px;
 }
 .left {
+  /* border: pink solid 5px; */
+  padding: 18px;
+}
+.center.left {
   padding: 30px;
-  /* border: 5px rgb(17, 0, 255) dotted; */
-  width: 100%;
 }
 main {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
-  border: 5px purple solid;
+  background-color: #ffffff;
+  /* border: 5px purple solid; */
+  height: fit-content;
+  color: rgb(0, 0, 0);
 }
 .four-blocks {
   display: flex;
-  flex-direction: column;
-  border: 5px yellowgreen solid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 5px yellowgreen solid; */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+}
+main > h3 {
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  /* border: black 5px dotted; */
+  margin: 16px 0;
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  text-align: center;
 }
 footer {
 }
 img {
   border-radius: 15px;
+  border: 2px white solid;
+  padding: 5px;
+  background-color: #e8effa8c;
+  margin: 10px;
+  border: #3882f6 3px solid;
+}
+.right > p {
+  margin: 8px;
+  font-size: 18px;
+}
+.right > h2 {
+  margin: 8px;
+  font-size: 48px;
+  font-weight: bold;
 }
 a {
   color: white;
   text-decoration: none;
 }
-button {
+.right > button {
   background-color: #3882f6;
   color: white;
   padding: 8px;
   border-radius: 8px;
+  border: 2px white solid;
+  width: 100px;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  border: red solid 5px;
+  font-size: 36px;
 }
